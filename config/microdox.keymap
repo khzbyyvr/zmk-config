@@ -26,6 +26,17 @@
             bindings        = <&kp RET>;
         };
 
+
+        combo_tab {
+            timeout-ms      = <50>;
+            key-positions   = <10 11>;
+            bindings        = <&kp TAB>;
+        };
+
+
+
+
+
         combo_num {
             timeout-ms      = <50>;
             key-positions   = <12 13>;
@@ -110,10 +121,10 @@
 
 
         bindings = <
-            &kp LC(LA(DEL))    &trans    &kp LPAR    &kp RPAR   &trans              &trans    &trans    &trans    &trans   &trans 
-            &trans             &trans    &kp LBKT    &kp RBKT   &kp PIPE            &trans    &trans    &trans    &trans   &trans 
-            &trans             &trans    &trans      &trans     &trans              &trans    &trans    &trans    &trans   &trans 
-                                &kp LGUI    &trans  &kp SPACE                       &kp RET   &trans    &kp RALT
+            &kp LC(LA(DEL))    &trans    &kp LPAR    &kp RPAR   &kp DQT            &trans    &trans    &trans    &trans   &trans 
+            &trans             &trans    &kp LBKT    &kp RBKT   &kp SQT            &trans    &trans    &trans    &trans   &trans 
+            &trans             &trans    &trans      &trans     &kp PIPE           &trans    &trans    &trans    &trans   &trans 
+                                &kp LGUI    &trans  &kp SPACE                      &kp RET   &trans    &kp RALT
         >;
                     };
 
