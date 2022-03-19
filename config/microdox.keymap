@@ -20,6 +20,12 @@
             bindings        = <&kp ESC>;
         };
 
+        combo_ret {
+            timeout-ms      = <50>;
+            key-positions   = <17 18>;
+            bindings        = <&kp RET>;
+        };
+
         combo_num {
             timeout-ms      = <50>;
             key-positions   = <13 14>;
@@ -36,15 +42,10 @@
 
         combo_sym {
             timeout-ms      = <50>;
-            key-positions   = <15 16>;
+            key-positions   = <16 17>;
             bindings        = <&mo 2>;
         };
 
-        combo_ret {
-            timeout-ms      = <50>;
-            key-positions   = <16 17>;
-            bindings        = <&kp RET>;
-        };
 
     };
 };
