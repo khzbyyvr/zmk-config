@@ -34,7 +34,11 @@
         };
 
 
-
+        combo_bspc {
+            timeout-ms      = <50>;
+            key-positions   = <18 19>;
+            bindings        = <&kp BSPC>;
+        };
 
 
         combo_num {
@@ -140,7 +144,7 @@
         //             |     |     |     |   |  0  |  .  |     |
 
         bindings = <
-            &trans &kp LG(N1)  &kp LG(N2) &kp LG(N3) &trans         &kp MINUS        &kp N1  &kp N2 &kp N3 &kp LS(EQUAL) 
+            &trans &kp LG(N1)  &kp LG(N2) &kp LG(N3) &trans         &kp LS(EQUAL)    &kp N1  &kp N2 &kp N3 &kp MINUS 
             &trans &kp LG(N4)  &kp LG(N5) &kp LG(N6) &trans         &kp B            &kp N4  &kp N5 &kp N6 &kp EQUAL 
             &trans &kp LG(N7)  &kp LG(N8) &kp LG(N9) &trans         &kp KP_MULTIPLY  &kp N7  &kp N8 &kp N9 &kp BSLH
                          &trans &trans &trans                       &kp N0           &kp DOT &trans
