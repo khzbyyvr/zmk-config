@@ -53,12 +53,17 @@
             bindings        = <&mo 4>;
         };
 
+        combo_num3 {
+            timeout-ms      = <50>;
+            key-positions   = <12 13 31>;
+            bindings        = <&mo 5>;
+        };
+
         combo_sym {
             timeout-ms      = <50>;
             key-positions   = <16 17>;
             bindings        = <&mo 2>;
         };
-
 
     };
 };
@@ -135,8 +140,6 @@
 
         num_layer {
 
-        // This layer is unreachable until "tri layer state" is sorted out.
-        // Leaving it here for completeness.
         // -----------------------------------------------------------------------------------------
         // |     |     |     |     |     |   |  A  |  1  |  2  |  3  |  D  |
         // |     |     |     |     |     |   |  B  |  4  |  5  |  6  |  E  |
@@ -167,6 +170,20 @@
         >;
         };
 
+        num_layer3 {
+
+        // -----------------------------------------------------------------------------------------
+        // |     |     |     |     |     |   |  A  |  1  |  2  |  3  |  D  |
+        // |     |     |     |     |     |   |  B  |  4  |  5  |  6  |  E  |
+        // |     |     |     |     |     |   |  C  |  7  |  8  |  9  |  F  |
+        //             |     |     |     |   |  0  |  .  |     |
+        bindings = <
+            &trans &kp LG(N1)  &kp LG(N2) &kp LG(N3) &trans         &kp LS(EQUAL)    &kp F1  &kp F2 &kp F3 &kp MINUS 
+            &trans &kp LG(N4)  &kp LG(N5) &kp LG(N6) &trans         &kp B            &kp F4  &kp F5 &kp F6 &kp EQUAL 
+            &trans &kp LG(N7)  &kp LG(N8) &kp LG(N9) &trans         &kp KP_MULTIPLY  &kp F7  &kp F8 &kp F9 &kp BSLH
+                               &trans     &trans     &trans         &kp N0           &kp DOT &trans
+        >;
+        };
 
     };
 };
