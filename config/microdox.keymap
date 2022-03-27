@@ -55,7 +55,7 @@
 
         combo_num3 {
             timeout-ms      = <50>;
-            key-positions   = <12 13 31>;
+            key-positions   = <10 13>;
             bindings        = <&mo 5>;
         };
 
