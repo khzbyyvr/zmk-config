@@ -112,8 +112,8 @@
         bindings = <
             &bt BT_CLR   &trans      &trans   &kp TILDE &trans     &kp TAB  &kp HOME &kp UP   &kp END   &kp DEL
             &bt BT_SEL 0 &kp K_CMENU &kp RALT &kp LCTRL &mo 3      &kp FSLH &kp LEFT &kp DOWN &kp RIGHT &kp BSPC
-            &bt BT_SEL 1 &trans      &trans   &trans    &trans     &kp BSLH &trans   &trans   &trans    &trans
-                                     &trans   &trans    &trans     &kp TAB   &trans   &trans
+            &bt BT_SEL 1 &trans      &trans   &trans    &trans     &kp BSLH &kp BSPC &trans   &trans    &trans
+                                     &trans   &trans    &trans     &kp TAB  &trans   &trans
         >;
                     };
 
@@ -164,7 +164,7 @@
         //             |     |     |     |    |  0  |  .  |     |
         bindings = <
             &trans &kp LG(N1)  &kp LG(N2) &kp LG(N3) &trans         &kp A           &kp EXCL    &kp AT          &kp HASH  &kp D
-            &trans &kp LG(N4)  &kp LG(N5) &kp LG(N6) &trans         &kp B           &kp DLLR    &kp PRCNT       &kp CARET &kp E
+            &trans &kp LG(N4)  &kp LG(N5) &kp LG(N6) &trans         &kp B           &kp DLLR    &kp PRCNT       &kp CARET &kp BSLH
             &trans &kp LG(N7)  &kp LG(N8) &kp LG(N9) &trans         &kp C           &kp AMPS    &kp KP_MULTIPLY &trans    &kp F
                                &trans     &trans     &trans         &kp LS(MINUS)   &kp MINUS   &trans
         >;
